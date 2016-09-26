@@ -1,0 +1,24 @@
+{
+  "name": "sjs-node",
+  "private": false,
+  "version": "1.0.0",
+  "dependencies": {
+    "bluebird": "~2.3.0",
+    "lodash": "~2.4.1",
+    "q-io": "~1.11.6"
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1",
+    "jshint": "~2.3.0",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^1.21.4",
+    "sinon": "~1.10.3"
+  },
+  "scripts": {
+    "start": "node index",
+    "mocha": "mocha",
+    "test": "npm test",
+    "lint": "node node_modules/jshint/bin/jshint -c .jshintrc lib test sjs_client.js",
+    "update-version": "node scripts/updateVersionWithBuildNumber.js"
+  }
+}

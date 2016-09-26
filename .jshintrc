@@ -1,0 +1,6 @@
+{
+  "node": true,
+  "latedef": "nofunc",
+  "predef": [ "describe", "it", "beforeEach", "afterEach" ],
+  "laxcomma": true
+}
