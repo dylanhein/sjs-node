@@ -15,10 +15,30 @@
     "sinon": "~1.10.3"
   },
   "scripts": {
-    "start": "node index",
+    "start": "node sjs_client",
     "mocha": "mocha",
     "test": "npm test",
-    "lint": "node node_modules/jshint/bin/jshint -c .jshintrc lib test sjs_client.js",
-    "update-version": "node scripts/updateVersionWithBuildNumber.js"
-  }
+    "lint": "node node_modules/jshint/bin/jshint -c .jshintrc lib test sjs_client.js"
+  },
+  "description": "A node.js wrapper of the spark-jobserver API.",
+  "main": "sjs_client.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanhein/sjs-node.git"
+  },
+  "keywords": [
+    "spark",
+    "jobserver",
+    "node"
+  ],
+  "author": "Dylan Hein <dylanhein40@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanhein/sjs-node/issues"
+  },
+  "homepage": "https://github.com/dylanhein/sjs-node#readme"
 }
