@@ -5,11 +5,11 @@ var Jars = require('./lib/jars/jars.js');
 var Jobs = require('./lib/jobs/jobs.js');
 var HttpClient = require('./lib/http_client.js');
 
-var SjsClient = function(sjsConfig, log) {
+var SjsClient = function(sjsConfig) {
   this.sjsConfig = sjsConfig;
-  this.httpClient = new HttpClient(sjsConfig, log);
+  this.httpClient = new HttpClient(sjsConfig);
   this.contexts = new Contexts(this.httpClient);
-  this.data = new Data(this.httpClient, log);
+  this.data = new Data(this.httpClient);
   this.jars = new Jars(this.httpClient);
   this.jobs = new Jobs(this.httpClient);
 };
