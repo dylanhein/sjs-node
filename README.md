@@ -3,7 +3,7 @@ sjs-node
 
 Description
 -----------
-A node.js wrapper of the spark-jobserver API.
+A promise-based node.js wrapper of the spark-jobserver API.
 
 Usage
 -----
@@ -31,7 +31,9 @@ var sjsClient = new SjsClient({
 
 To use the client instance to communicate with the jobserver, call the function you wish to use.  Example:
 ```
-var allJobs = sjsClient.jobs.listJobs();
+sjsClient.jobs.listJobs().then(function(results) {
+  doSomethingWith(results);
+});
 ```
 
 API Reference
